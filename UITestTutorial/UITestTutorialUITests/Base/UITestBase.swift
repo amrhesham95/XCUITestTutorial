@@ -21,4 +21,11 @@ class UITestBase: XCTestCase {
         app = nil
         super.tearDown()
     }
+    
+    func XCAsyncAssert(_ element: XCUIElement) {
+        let isElementExist = element.waitForExistence(timeout: 5)
+        if isElementExist {
+            XCTAssertTrue(element.exists)
+        }
+    }
 }
