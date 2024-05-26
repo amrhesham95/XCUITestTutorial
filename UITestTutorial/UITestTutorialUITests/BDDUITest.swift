@@ -34,26 +34,43 @@ final class BDDUITest: XCTestCase {
 extension BDDUITest {
     func givenAppIsReady() {
         XCTContext.runActivity(named: "Given App Is Ready") { _ in
-            XCTAssertTrue(app.buttons["clickMeButton"].exists)
+            XCTAssertTrue(Screen.enrollButton.element.exists)
         }
     }
     
     func whenDataIsEntered() {
         XCTContext.runActivity(named: "When Data is Entered") { _ in
-            app.textFields["cityInputField"].tap()
-            app.textFields["cityInputField"].typeText("Cairo")
+            Screen.cityInput.element.tap()
+            Screen.cityInput.element.typeText("Cairo")
         }
     }
     
     func whenEnrollIsTapped() {
         XCTContext.runActivity(named: "When Enroll Button is Tapped") { _ in
-            app.buttons["clickMeButton"].tap()
+            Screen.enrollButton.element.tap()
         }
     }
     
     func thenThanksMessageIsShown() {
         XCTContext.runActivity(named: "Then Thanks Message Is Shown") { _ in
-            XCTAssertTrue(app.staticTexts["welcomeText"].label == "Thanks for Joining!")
+            XCTAssertTrue(Screen.welcomeLabel.element.label == "Thanks for Joining!")
+        }
+    }
+}
+
+enum Screen: String {
+    case enrollButton = "clickMeButton"
+    case welcomeLabel = "welcomeText"
+    case cityInput = "cityInputField"
+    
+    var element: XCUIElement {
+        switch self {
+        case .enrollButton:
+            XCUIApplication().buttons["clickMeButton"]
+        case .welcomeLabel:
+            XCUIApplication().staticTexts["welcomeText"]
+        case .cityInput:
+            XCUIApplication().textFields["cityInputField"]
         }
     }
 }
