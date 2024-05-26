@@ -8,16 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var textTitle: String
+    @State var welcomeLabel: String
+    @State var cityInput: String
     
     var body: some View {
-        VStack {
-            Button("Click me") {
-                textTitle = "Welcome Home!"
+        VStack(spacing: 16) {
+            Text("Enter you City")
+                .accessibilityIdentifier("enterCityText")
+            
+            TextField("", text: $cityInput)
+                .accessibilityIdentifier("cityInputField")
+
+            Button("Enroll") {
+                welcomeLabel = "Thanks for Joining!"
             }
             .accessibilityLabel("clickMeButton")
             
-            Text(textTitle)
+            Text(welcomeLabel)
                 .accessibilityIdentifier("welcomeText")
         }
         .padding()
@@ -25,5 +32,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView(textTitle: "Hello, world!")
+    ContentView(welcomeLabel: "Hello, world!", cityInput: "")
 }

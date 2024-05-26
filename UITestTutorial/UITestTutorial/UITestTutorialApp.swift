@@ -11,7 +11,7 @@ import SwiftUI
 struct UITestTutorialApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(textTitle: "")
+            ContentView(welcomeLabel: "", cityInput: "")
         }
     }
 }
