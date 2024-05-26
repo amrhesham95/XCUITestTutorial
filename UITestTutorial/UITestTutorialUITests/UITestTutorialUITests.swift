@@ -38,4 +38,11 @@ final class UITestTutorialUITests: XCTestCase {
             }
         }
     }
+    
+    func test_whenClickMeButtonTapped_textIsUpdated() {
+        let app = XCUIApplication()
+        app.launch()
+        app.buttons["clickMeButton"].tap()
+        XCTAssertTrue(app.staticTexts["welcomeText"].label == "Welcome Home!")
+    }
 }
