@@ -39,8 +39,6 @@ final class UITestTutorialUITests: XCTestCase {
     }
     
     func test_whenClickMeButtonTapped_textIsUpdated() {
-        let app = XCUIApplication()
-        app.launch()
         app.textFields["cityInputField"].tap()
         app.textFields["cityInputField"].typeText("Cairo")
         app.buttons["clickMeButton"].tap()

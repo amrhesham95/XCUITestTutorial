@@ -13,6 +13,7 @@
 		EFDD99612C037F5B0042B4C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFDD99602C037F5B0042B4C5 /* Preview Assets.xcassets */; };
 		EFDD996E2C037F750042B4C5 /* UITestTutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDD996D2C037F750042B4C5 /* UITestTutorialUITests.swift */; };
 		EFDD99702C037F750042B4C5 /* UITestTutorialUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDD996F2C037F750042B4C5 /* UITestTutorialUITestsLaunchTests.swift */; };
+		EFF8AEB52C03947D00062BE8 /* BDDUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF8AEB42C03947D00062BE8 /* BDDUITest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		EFDD996B2C037F750042B4C5 /* UITestTutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITestTutorialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFDD996D2C037F750042B4C5 /* UITestTutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestTutorialUITests.swift; sourceTree = "<group>"; };
 		EFDD996F2C037F750042B4C5 /* UITestTutorialUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestTutorialUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EFF8AEB42C03947D00062BE8 /* BDDUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDDUITest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				EFDD996D2C037F750042B4C5 /* UITestTutorialUITests.swift */,
+				EFF8AEB42C03947D00062BE8 /* BDDUITest.swift */,
 				EFDD996F2C037F750042B4C5 /* UITestTutorialUITestsLaunchTests.swift */,
 			);
 			path = UITestTutorialUITests;
@@ -211,6 +214,7 @@
 			files = (
 				EFDD99702C037F750042B4C5 /* UITestTutorialUITestsLaunchTests.swift in Sources */,
 				EFDD996E2C037F750042B4C5 /* UITestTutorialUITests.swift in Sources */,
+				EFF8AEB52C03947D00062BE8 /* BDDUITest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
