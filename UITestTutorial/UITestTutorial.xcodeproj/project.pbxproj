@@ -14,6 +14,9 @@
 		EFDD996E2C037F750042B4C5 /* UITestTutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDD996D2C037F750042B4C5 /* UITestTutorialUITests.swift */; };
 		EFDD99702C037F750042B4C5 /* UITestTutorialUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDD996F2C037F750042B4C5 /* UITestTutorialUITestsLaunchTests.swift */; };
 		EFF8AEB52C03947D00062BE8 /* BDDUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF8AEB42C03947D00062BE8 /* BDDUITest.swift */; };
+		EFF8AEB72C0399B700062BE8 /* UITestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF8AEB62C0399B700062BE8 /* UITestBase.swift */; };
+		EFF8AEB92C039A0800062BE8 /* UITestsSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF8AEB82C039A0800062BE8 /* UITestsSteps.swift */; };
+		EFF8AEBB2C039A3B00062BE8 /* UITestsElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF8AEBA2C039A3B00062BE8 /* UITestsElements.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		EFDD996D2C037F750042B4C5 /* UITestTutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestTutorialUITests.swift; sourceTree = "<group>"; };
 		EFDD996F2C037F750042B4C5 /* UITestTutorialUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestTutorialUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EFF8AEB42C03947D00062BE8 /* BDDUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDDUITest.swift; sourceTree = "<group>"; };
+		EFF8AEB62C0399B700062BE8 /* UITestBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestBase.swift; sourceTree = "<group>"; };
+		EFF8AEB82C039A0800062BE8 /* UITestsSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestsSteps.swift; sourceTree = "<group>"; };
+		EFF8AEBA2C039A3B00062BE8 /* UITestsElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestsElements.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,11 +102,46 @@
 		EFDD996C2C037F750042B4C5 /* UITestTutorialUITests */ = {
 			isa = PBXGroup;
 			children = (
-				EFDD996D2C037F750042B4C5 /* UITestTutorialUITests.swift */,
-				EFF8AEB42C03947D00062BE8 /* BDDUITest.swift */,
+				EFF8AEBF2C039A9000062BE8 /* Tests */,
+				EFF8AEBE2C039A7A00062BE8 /* Base */,
+				EFF8AEBD2C039A7200062BE8 /* Steps */,
+				EFF8AEBC2C039A6B00062BE8 /* Elements */,
 				EFDD996F2C037F750042B4C5 /* UITestTutorialUITestsLaunchTests.swift */,
 			);
 			path = UITestTutorialUITests;
+			sourceTree = "<group>";
+		};
+		EFF8AEBC2C039A6B00062BE8 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				EFF8AEBA2C039A3B00062BE8 /* UITestsElements.swift */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		EFF8AEBD2C039A7200062BE8 /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+				EFF8AEB82C039A0800062BE8 /* UITestsSteps.swift */,
+			);
+			path = Steps;
+			sourceTree = "<group>";
+		};
+		EFF8AEBE2C039A7A00062BE8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EFF8AEB62C0399B700062BE8 /* UITestBase.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		EFF8AEBF2C039A9000062BE8 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EFDD996D2C037F750042B4C5 /* UITestTutorialUITests.swift */,
+				EFF8AEB42C03947D00062BE8 /* BDDUITest.swift */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +253,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFF8AEBB2C039A3B00062BE8 /* UITestsElements.swift in Sources */,
+				EFF8AEB72C0399B700062BE8 /* UITestBase.swift in Sources */,
 				EFDD99702C037F750042B4C5 /* UITestTutorialUITestsLaunchTests.swift in Sources */,
+				EFF8AEB92C039A0800062BE8 /* UITestsSteps.swift in Sources */,
 				EFDD996E2C037F750042B4C5 /* UITestTutorialUITests.swift in Sources */,
 				EFF8AEB52C03947D00062BE8 /* BDDUITest.swift in Sources */,
 			);
